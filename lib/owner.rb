@@ -32,6 +32,7 @@ def dogs
 end
 
 def buy_cat(name)
+<<<<<<< HEAD
   name = Cat.new(name, self)
     
 end
@@ -63,6 +64,38 @@ def list_pets
   cat_count = arr2.count
   p "I have #{dog_count} dog(s), and #{cat_count} cat(s)."
 end
+=======
+  Cat.all.uniq {|item| item.name}
+  Cat.all.select{|cat| cat.name
+    if cat.name==name
+      cat.owner = self
+    end
+  }
+                 
+    p cats
+end
+
+def buy_dog(name)
+  
+end
+
+def walk_cats
+end
+
+def walk_dogs
+end
+
+def feed_cats
+end
+
+def feed_dogs
+end
+
+def sell_pets
+end
+
+
+>>>>>>> 9ac4308caa646571a9c7d3a69c21dd44ab51b257
 end
 
 
@@ -70,3 +103,7 @@ end
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9ac4308caa646571a9c7d3a69c21dd44ab51b257
